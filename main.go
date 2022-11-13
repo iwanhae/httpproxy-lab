@@ -31,6 +31,7 @@ func main() {
 				Int("status", status).
 				Int("size", size).
 				Dur("duration", duration).
+				Str("host", r.Host).
 				Msg("")
 		})).
 		Append(hlog.RemoteAddrHandler("ip")).
