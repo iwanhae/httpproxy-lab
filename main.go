@@ -32,6 +32,7 @@ func main() {
 				Int("size", size).
 				Dur("duration", duration).
 				Str("host", r.Host).
+				Interface("headers", r.Header).
 				Msg("")
 		})).
 		Append(hlog.RemoteAddrHandler("ip")).
